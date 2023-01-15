@@ -9,7 +9,7 @@ function TickersList({ tickers }) {
   const saved = useSelector((state) => state.tickers.saved);
 
   return (
-    <section className="tickers-list">
+    <section className="tickers-list" data-testid="list">
       {tickers.map((ticker, index) => (
         <div
           onClick={() => navigate("/details", { state: index + 1 })}

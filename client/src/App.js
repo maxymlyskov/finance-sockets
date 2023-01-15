@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Route, Routes } from "react-router-dom/dist";
 
 import MainPage from "./pages/MainPage";
@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import TickerDetailsPage from "./pages/TickerDetailsPage";
 function App() {
   return (
-    <main>
+    <main data-testid="app">
       <Header />
       <Routes>
         <Route path="/" element={<MainPage />} />

@@ -2,7 +2,7 @@ import React from "react";
 
 function App() {
   return (
-    <nav className="header">
+    <nav className="header" data-testid="header">
       <img
         className="header__image"
         src={require("../images/profit-growth.png").default}

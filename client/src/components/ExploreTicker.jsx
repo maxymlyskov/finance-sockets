@@ -5,7 +5,7 @@ function ExploreTicker({ tickers }) {
   const navigate = useNavigate();
 
   return (
-    <section className="explore">
+    <section className="explore" data-testid="explore">
       {tickers.map((ticker, index) => (
         <article
           onClick={() => {
