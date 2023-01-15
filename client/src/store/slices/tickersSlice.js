@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   data: [],
+  saved: [],
 };
 
 export const tickersSlice = createSlice({
@@ -11,9 +12,12 @@ export const tickersSlice = createSlice({
     getData: (state, { payload }) => {
       state.data = payload;
     },
+    getSaved: (state, { payload }) => {
+      state.saved = payload;
+    },
   },
 });
 
-export const { getData } = tickersSlice.actions;
+export const { getData, getSaved } = tickersSlice.actions;
 
 export default tickersSlice.reducer;

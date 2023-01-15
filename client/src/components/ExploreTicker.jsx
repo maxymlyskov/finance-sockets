@@ -8,7 +8,9 @@ function ExploreTicker({ tickers }) {
     <section className="explore">
       {tickers.map((ticker, index) => (
         <article
-          onClick={() => navigate("/details", { state: index })}
+          onClick={() => {
+            navigate("/details", { state: index + 1 });
+          }}
           className="explore__ticker"
         >
           <h4>{ticker.ticker}</h4>
